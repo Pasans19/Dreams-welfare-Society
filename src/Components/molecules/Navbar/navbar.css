@@ -1,0 +1,88 @@
+/* Apply a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Logo and Navbar Styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  transform: rotate(-20deg);
+}
+
+.logo span {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar {
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.9), rgba(59, 59, 59, 0.9)) !important;
+  padding: 15px 30px;
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffd700;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .logo img {
+    height: 30px; /* Reduce logo size */
+    margin-right: 5px;
+  }
+  
+  .logo span {
+    font-size: 1em; /* Adjust text size */
+  }
+  
+  .navbar {
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand, .nav-link {
+    padding: 8px 10px;
+    font-size: 0.9em; /* Smaller font size */
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+}
