@@ -1,0 +1,213 @@
+.index-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hero:hover .hero-overlay {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.cta-button {
+  background-color: #ff7e5f;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #feb47b;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about {
+  background-color: #f9f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: transform 0.3s;
+}
+
+.about:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Events Section */
+.events {
+  background-color: #f0f4f8;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Team Section */
+.team {
+  background-color: #f0f4f8;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team .card {
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team .card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.team .card h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.team .card p {
+  font-size: 1.1em;
+  margin: 5px 0 0;
+}
+
+
+/* Card Styles */
+.card {
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.card:hover .card-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+/* Contact Section */
+.contact {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: #fff;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.contact-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.contact-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
